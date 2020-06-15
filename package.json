@@ -5,8 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
+    "func": "nodemon src/myFunction.js",
     "dev": "env-cmd -f config/dev.env nodemon src/index.js -e js,hbs",
     "test": "env-cmd -f config/test.env jest --watch"
+  },
+  "jest": {
+    "testEnvironment": "node"
   },
   "repository": {
     "type": "git",
@@ -20,9 +24,19 @@
   "homepage": "https://github.com/lukasijus/mern#readme",
   "devDependencies": {
     "env-cmd": "^10.1.0",
-    "nodemon": "^2.0.4"
+    "jest": "^26.0.1",
+    "nodemon": "^2.0.4",
+    "supertest": "^4.0.2"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "express-validator": "^6.5.0",
+    "gravatar": "^1.8.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.5.7",
+    "mongoose": "^5.9.15",
+    "request": "^2.88.2",
+    "validator": "^13.0.0"
   }
 }
