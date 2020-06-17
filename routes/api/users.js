@@ -10,7 +10,8 @@ const User = require('../../models/User')
 // @route       POST api/users
 // @desc        Test route
 // @access      Public
-router.post('/', [
+const userRouter = router
+userRouter.post('/', [
     check('name','Name is required')
         .not()
         .isEmpty(),
@@ -73,4 +74,4 @@ router.post('/', [
 
     })
 
-module.exports = router
+module.exports = userRouter

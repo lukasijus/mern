@@ -36,6 +36,7 @@
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^3.5.7",
     "mongoose": "^5.9.15",
+    "passport": "^0.4.1",
     "request": "^2.88.2",
     "validator": "^13.0.0"
   }
