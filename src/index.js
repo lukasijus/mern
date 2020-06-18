@@ -18,6 +18,6 @@ app.use('/api/profile', require('../routes/api/profile'))
 app.use('/api/posts',   require('../routes/api/posts'))
 app.use('/api/auth',    require('../routes/api/auth'))
 
-app.listen(port, console.log('running on port', port))
+app.listen(port)
 
 module.exports = app
