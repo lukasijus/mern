@@ -1,3 +1,5 @@
 /node_modules
 /config
 /tests
+/devconnector_html_theme
+/client/node_modules
