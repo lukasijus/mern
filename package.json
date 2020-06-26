@@ -9,7 +9,8 @@
     "dev": "env-cmd -f config/dev.env nodemon src/index.js -e js,hbs",
     "test": "env-cmd -f config/test.env jest --watch",
     "client": "npm start --prefix client",
-    "devfull": "concurrently \"npm run dev\" \"npm run client\""
+    "devfull": "concurrently \"npm run dev\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "jest": {
     "testEnvironment": "node"
